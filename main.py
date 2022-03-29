@@ -180,6 +180,7 @@ while running:
   if appearfor:
     appearfor -= 1
 
+    screen.fill((255, 255, 255))
     screen.blit(winScreen, (0, 0))
     pygame.display.flip()
 
