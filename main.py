@@ -7,16 +7,18 @@ screen = pygame.display.set_mode((1500, 900))
 pygame.display.set_caption("BEst game")
 
 # WASD controls
-image = pygame.image.load(os.getcwd() + '\\pixil-frame-0.png')
+image = pygame.image.load(os.getcwd() + '/pixil-frame-0.png')
 # Change the image size
 image = pygame.transform.scale(image, (200, 200))
 
-# Keep it running
+# Keep it running 
 running = True
 # bg color
 col = 0
 
-# it run?
+# YAY I CAN RENDER TEXT NOW
+text = pygame.font.Font("Rubik-Medium.ttf", 50)
+img = text.render("This is the best game", True, (255, 0, 0))
 
 # Main gameloop
 while running:
@@ -65,7 +67,8 @@ while running:
 
   # Update the screen no matter what
   screen.blit(image, (10, 10))
-
+  screen.blit(img, (40, 40))
+  
   pygame.display.flip()
   pygame.display.update()
 
