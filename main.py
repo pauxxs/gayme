@@ -1,4 +1,3 @@
-from turtle import delay
 import pygame, os, random
 
 # Initialize pygame
